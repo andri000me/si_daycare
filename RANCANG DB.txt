@@ -1,7 +1,7 @@
 spp
-- id* Char (2)
-- namaspp  Varchar (50)
-- harga Int
+- id* Char (2) [text]
+- namaspp  Varchar (50) [text]
+- harga Int [text-number]
 - status Varchar (20)
 
 Kelompok usia

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Koperasi Desa Sidaharja</title>
+  <title>SI - Daycare</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +23,7 @@
     <!-- /.login-logo -->
     <div class="card">
       <div class="card-body login-card-body">
-       <h4 class="login-box-msg">Koperasi Desa Sidaharja</h4>
+       <h4 class="login-box-msg">SI - Daycare</h4>
        <p class="login-box-msg">Silahkan Login</p>
 
        <form action="logincek.php" method="post">
