@@ -3,13 +3,10 @@ require_once '../setting/crud.php';
 require_once '../setting/koneksi.php';
 require_once '../setting/tanggal.php';
 require_once '../setting/fungsi.php';
-require_once '../setting/koneksi_sms.php';
-require_once '../setting/autosms.php';
-require_once '../setting/sms.php';
-require_once '../setting/reminder.php';
 
 session_start();
-if(isset($_SESSION['petugas'])){
+$_SESSION['admin']='1';
+if(isset($_SESSION['admin'])){
   ?>
   <!DOCTYPE html>
 <!--
@@ -22,7 +19,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>Koperasi Desa Sidaharja</title>
+  <title>SI - Daycare</title>
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
@@ -79,7 +76,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="#" class="brand-link">
-        <span class="brand-text font-weight-light">Koperasi Desa Sidaharja</span>
+        <span class="brand-text font-weight-light">SI - Daycare</span>
       </a>
 
       <!-- Sidebar -->
@@ -90,7 +87,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <img src="../assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-            <a href="#" class="d-block">Petugas</a>
+            <a href="#" class="d-block">Admin</a>
           </div>
         </div>
 
@@ -143,7 +140,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2020 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->

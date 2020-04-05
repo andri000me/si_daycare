@@ -1,0 +1,93 @@
+spp
+- id* Char (2)
+- namaspp  Varchar (50)
+- harga Int
+- status Varchar (20)
+
+Kelompok usia
+- id* Char (3)
+- kelompok Varchar (100)
+- keterangan Text
+
+Pengguna
+- idpengguna* char (5)
+- nama varchar (100)
+- username varchar(50)
+- password varchar (50)
+- level varchar(20)
+
+Guru
+- idguru* Char (6)
+- nama Varchar (100)
+- notelpon Varchar (15)
+- alamat text
+- username Varchar(50)
+- pass varchar (50)
+
+Pendaftaran
+- iddaftar* Char (9)
+- tglpendaftaran Date
+- statusdaftar Varchar(10)
+- biaya Int
+
+Anak
+- idanak* Char (9)
+- idaftar** Char (9)
+- namaanak Varchar(100)
+- tempatlahir Varchar (50)
+- tglahir Date 
+- jk Char (1)
+- tglahir Date
+- namaayah Varchar(100)
+- namaibu Varchar (100)
+- notelponortu Varchar (15)
+- username Varchar(50)
+- password Varchar (50)
+
+Administrasi Bulan
+- id* Int Auto Increament
+- idanak** Char (9)
+- tglbayar date
+- idspp** Char(2)
+- bulan Int
+- tahun Int
+- dibayar Int
+
+Aktifitas
+- idaktifitas* char (4)
+- namaaktifitas varchar(50)
+
+Kegiatan
+- id* char (5)
+- nama varchar (100)
+- indikator varchar (50)
+- kelompok usia** char (3)
+
+Guru Asuh
+- idasuh Int, Auto Increament
+- idguru** char (6)
+- idanak** Char (9)
+
+Aktifitas Anak
+- id* Int Auto Increament
+- idanak** char (9)
+- idaktifitas** char (4)
+- tanggal date
+- keterangan text
+
+penilaian
+- id* int Auto Increament
+- idkegiatan** char (5)
+- idanak** char (9)
+- tgl date 
+- nilai char(1)
+- keterangan Text
+
+penjemputan
+- idjemput* int Auto Increament
+- idanak** char (9)
+- tanggal date
+- jamjemput time
+- status varchar(20)
+- denda Int
+
